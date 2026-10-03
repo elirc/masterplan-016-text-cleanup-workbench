@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Text Cleanup Workbench</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<div class="eyebrow">Fieldwork / MASTERPLAN M016</div>
+<h1>Text Cleanup Workbench</h1>
+<p class="lede">A librarian needs a small script that normalizes pasted titles and explains every changed value.</p>
+</header>
+<main id="main" tabindex="-1">
+<h2>One line becomes one record</h2>
+<label for="source">Source text, preserved as typed</label>
+<textarea id="source" rows="5">  hello   world  &#10; café   —   déjà vu! &#10;   </textarea>
+<button id="clean">Preview cleanup</button>
+<pre id="result" aria-live="polite">
+</pre>
+</main>
+<footer>Fictional local learning project. <a href="https://github.com/elirc/masterplan-016-text-cleanup-workbench">Source and learning workshop</a>
+</footer>
+<script type="module" src="app.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "masterplan-016-text-cleanup-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node tools/serve.mjs",
+    "check": "node tools/check-site.mjs"
+  },
+  "description": "A librarian needs a small script that normalizes pasted titles and explains every changed value."
+}
