@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-10-03T22:31:09.893016+00:00",
+  "nodeVersion": "v22.16.0",
+  "nodeChecks": {
+    "command": "node --test",
+    "exitCode": 0,
+    "tests": 5,
+    "output": "TAP version 13\n# Subtest: trim and repeated whitespace follow the stated normalization\nok 1 - trim and repeated whitespace follow the stated normalization\n  ---\n  duration_ms: 6.1849\n  type: 'test'\n  ...\n# Subtest: empty and all-whitespace values remain valid records\nok 2 - empty and all-whitespace values remain valid records\n  ---\n  duration_ms: 3.6174\n  type: 'test'\n  ...\n# Subtest: Unicode and punctuation survive\nok 3 - Unicode and punctuation survive\n  ---\n  duration_ms: 1.0602\n  type: 'test'\n  ...\n# Subtest: list transformation preserves source and count\nok 4 - list transformation preserves source and count\n  ---\n  duration_ms: 4.6689\n  type: 'test'\n  ...\n# Subtest: a second pass is idempotent over representative fixtures\nok 5 - a second pass is idempotent over representative fixtures\n  ---\n  duration_ms: 3.7115\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 658.7678\n"
+  },
+  "browserChecks": {
+    "id": 16,
+    "status": "passed",
+    "checks": [
+      "No document horizontal overflow at 1200, 800, 500 and 320 CSS pixels",
+      "First Tab reveals skip link; Enter focuses main",
+      "Unicode cleanup and second-pass idempotence visible; source textarea unchanged including blank record"
+    ],
+    "browser": "Installed Microsoft Edge via Playwright",
+    "checkedAt": "2026-10-03T22:28:25.488264+00:00",
+    "consoleErrors": []
+  },
+  "scope": "Actual local reference verification. Learner stories are not implemented. Remote CI results are separate."
+}
