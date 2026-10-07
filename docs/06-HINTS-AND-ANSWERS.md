@@ -6,7 +6,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 01: Count changed records
 
-**Hint 1 — ownership:** Begin from `cleanList`. Derive a count from before !== after and display it alongside total rows.
+**Hint 1 — ownership:** Begin from the `rows` array in `public/app.js`. Derive a count from before !== after and display it alongside total rows.
 
 **Hint 2 — reasoning:** Revisit the decision “Preserve the original alongside the result”. Ask yourself: What information disappears if you filter out empty results before review?
 
@@ -16,9 +16,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 02: Add a copy-results action
 
-**Hint 1 — ownership:** Begin from `cleanList`. Offer explicit copying of cleaned rows while preserving the source editor and showing copy failure.
+**Hint 1 — ownership:** Begin from the result rendering in `public/app.js`. Offer explicit copying of cleaned rows while preserving the source editor and showing copy failure.
 
-**Hint 2 — reasoning:** Revisit the decision “Keep normalization narrow”. Ask yourself: Would collapsing spaces be appropriate inside every source-code string or poem?
+**Hint 2 — reasoning:** Revisit the decision “Preserve the original alongside the result”. Ask yourself: What information disappears if you filter out empty results before review?
 
 **Answer direction:** A defensible solution demonstrates this observable result: The source remains unchanged and the UI does not claim clipboard success if the API fails. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -26,9 +26,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 03: Make whitespace policy selectable
 
-**Hint 1 — ownership:** Begin from `cleanList`. Add a separate trim-only mode and keep the existing collapse mode.
+**Hint 1 — ownership:** Begin from the regular expression in `cleanText`. Add a separate trim-only mode and keep the existing collapse mode.
 
-**Hint 2 — reasoning:** Revisit the decision “Use idempotence as a second kind of check”. Ask yourself: Name an idempotent implementation that violates the actual cleanup contract.
+**Hint 2 — reasoning:** Revisit the decision “Keep normalization narrow”. Ask yourself: Would collapsing spaces be appropriate inside every source-code string or poem?
 
 **Answer direction:** A defensible solution demonstrates this observable result: Interior spacing is preserved in trim-only mode and collapsed only in the documented mode. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -36,7 +36,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 04: Highlight unchanged rows
 
-**Hint 1 — ownership:** Begin from `cleanList`. Render a textual unchanged marker for each stable source row.
+**Hint 1 — ownership:** Begin from the row formatting in `public/app.js`. Render a textual unchanged marker for each stable source row.
 
 **Hint 2 — reasoning:** Revisit the decision “Preserve the original alongside the result”. Ask yourself: What information disappears if you filter out empty results before review?
 
@@ -46,7 +46,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 05: Expand Unicode fixtures
 
-**Hint 1 — ownership:** Begin from `cleanList`. Add non-Latin letters, emoji and punctuation examples with explicit expected strings.
+**Hint 1 — ownership:** Begin from `test/core.test.js` and the whitespace pattern in `cleanText`. Add non-Latin letters, emoji and punctuation examples with explicit expected strings.
 
 **Hint 2 — reasoning:** Revisit the decision “Keep normalization narrow”. Ask yourself: Would collapsing spaces be appropriate inside every source-code string or poem?
 
@@ -56,9 +56,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 06: Add a resettable preview
 
-**Hint 1 — ownership:** Begin from `cleanList`. Clear derived results when the source changes and require another preview.
+**Hint 1 — ownership:** Begin from the `#source` textarea and the Clean handler in `public/app.js`. Clear derived results when the source changes and require another preview.
 
-**Hint 2 — reasoning:** Revisit the decision “Use idempotence as a second kind of check”. Ask yourself: Name an idempotent implementation that violates the actual cleanup contract.
+**Hint 2 — reasoning:** Revisit the decision “Preserve the original alongside the result”. Ask yourself: What information disappears if you filter out empty results before review?
 
 **Answer direction:** A defensible solution demonstrates this observable result: A displayed cleaned list cannot be mistaken for the current source after an edit. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 

@@ -6,8 +6,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 01: Count changed records
 
-**User need:** As a learner or user of Text Cleanup Workbench, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Derive a count from before !== after and display it alongside total rows.
 
 **Implementation plan:**
@@ -26,8 +24,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 02: Add a copy-results action
-
-**User need:** As a learner or user of Text Cleanup Workbench, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Offer explicit copying of cleaned rows while preserving the source editor and showing copy failure.
 
@@ -48,8 +44,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 03: Make whitespace policy selectable
 
-**User need:** As a learner or user of Text Cleanup Workbench, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Add a separate trim-only mode and keep the existing collapse mode.
 
 **Implementation plan:**
@@ -68,8 +62,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 04: Highlight unchanged rows
-
-**User need:** As a learner or user of Text Cleanup Workbench, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Render a textual unchanged marker for each stable source row.
 
@@ -90,8 +82,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 05: Expand Unicode fixtures
 
-**User need:** As a learner or user of Text Cleanup Workbench, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Add non-Latin letters, emoji and punctuation examples with explicit expected strings.
 
 **Implementation plan:**
@@ -110,8 +100,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 06: Add a resettable preview
-
-**User need:** As a learner or user of Text Cleanup Workbench, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Clear derived results when the source changes and require another preview.
 

@@ -14,13 +14,13 @@ The smallest useful result answers this user need: A librarian needs a small scr
 
 The adapter splits on newline first, so the UI treats lines as records. The core cleanText can normalize a string containing newlines too, but the browser flow establishes record boundaries before calling it. This is an example of input interpretation belonging at an adapter boundary.
 
-**Pause and produce evidence:**   hello   world  . Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
+**Pause and produce evidence:** Only spaces or an empty string. Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
 
 ## Step 2: Trace a transformation
 
 Read trim and replace in order. Use tabs and repeated spaces in one example and note exactly which characters become one space. Then use a Unicode word with punctuation and confirm those characters are still present. A visually ordinary sample alone would hide an overaggressive ASCII-only cleanup.
 
-**Pause and produce evidence:**  café   —   déjà vu! . Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
+**Pause and produce evidence:** hello   world. Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
 
 ## Step 3: Preserve list shape
 
@@ -32,7 +32,7 @@ Read the map callback and count rows before and after. No splice or filter is pr
 
 For each fixture compute first = cleanText(source) and second = cleanText(first). Compare them, then separately compare first with a hand-written expectation. This avoids the common mistake of calling a mathematical property sufficient proof of all product behavior.
 
-**Pause and produce evidence:** Only spaces or an empty string. Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
+**Pause and produce evidence:** café   —   déjà vu!. Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
 
 ## Keep the implementation reviewable
 
